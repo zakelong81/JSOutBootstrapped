@@ -13,6 +13,12 @@
       function sayGoodbye(){
         document.getElementById("goodbye").innerHTML = "See ya!";
       }
+      function sayMyname(){
+        document.getElementById("myname").innerHTML = "My name is Long!";
+      }
+      function Info(){
+        document.getElementById("class").innerHTML = "CINS 110";
+      }
     </script>
   </head>
   <body>
@@ -20,10 +26,22 @@
       <button type="button" class="btn btn-default" onclick="sayHello();">
         Sign in
       </button>
-      <button type="button" class="btn btn-default">
+      <button type="button" class="btn btn-default" onclick="sayMyname();">
+        My name
+      </button>
+      <button type="button" class="btn btn-default" onclick="Info();">
+        Class
+      </button>
+      <button type="button" class="btn btn-default" onclick="sayGoodbye();">
         Sign out
       </button>
       <div class="alert alert-success" role="alert" id="hello">
+        &nbsp;
+      </div>
+      <div class="alert alert-warning" role="alert" id="myname">
+        &nbsp;
+      </div>
+        <div class="alert alert-info" role="alert" id="class">
         &nbsp;
       </div>
       <div class="alert alert-danger" role="alert" id="goodbye">
